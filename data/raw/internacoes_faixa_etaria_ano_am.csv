@@ -1,0 +1,23 @@
+﻿# fonte: DATASUS TABNET - SIH/SUS, Morbidade Hospitalar por local de residencia - Amazonas
+# url_formulario: http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sih/cnv/nram.def
+# consulta: Internacoes por faixa etaria e ano de atendimento
+# periodo: Jan/2021 a Fev/2026
+# linha: Faixa_Etária_1
+# coluna: Ano_atendimento
+# conteudo: Internações
+# observacao: Retorno TABNET em formato prn separado por ponto e virgula; arquivo salvo como CSV UTF-8.
+
+Faixa Et&aacute;ria 1,2020,2021,2022,2023,2024,2025,2026,Total
+Menor 1 ano,1172,13731,13959,14467,14940,16394,1908,76571
+1 a 4 anos,627,10838,12843,13791,13679,14496,1470,67744
+5 a 9 anos,386,6389,7433,7813,8214,9312,764,40311
+10 a 14 anos,332,6293,5999,6111,6882,7467,761,33845
+15 a 19 anos,1126,21886,19298,19006,18645,21142,2212,103315
+20 a 29 anos,2771,51327,48413,47027,49842,55151,5872,260403
+30 a 39 anos,2079,32029,31704,31314,33909,37613,4066,172714
+40 a 49 anos,1540,19798,20468,20991,23516,26977,2878,116168
+50 a 59 anos,1454,16790,16841,17803,19315,23535,2402,98140
+60 a 69 anos,1447,16963,17239,18060,19536,22976,2387,98608
+70 a 79 anos,1037,11730,11952,12184,13996,16265,1849,69013
+80 anos e mais,610,7514,7743,7588,8370,9690,1141,42656
+Total,14581,215288,213892,216155,230844,261018,27710,1179488

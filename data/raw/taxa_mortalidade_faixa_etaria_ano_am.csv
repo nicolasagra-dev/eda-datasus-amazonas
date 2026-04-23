@@ -1,0 +1,23 @@
+﻿# fonte: DATASUS TABNET - SIH/SUS, Morbidade Hospitalar por local de residencia - Amazonas
+# url_formulario: http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sih/cnv/nram.def
+# consulta: Taxa de mortalidade por faixa etaria e ano de atendimento
+# periodo: Jan/2021 a Fev/2026
+# linha: Faixa_Etária_1
+# coluna: Ano_atendimento
+# conteudo: Taxa_mortalidade
+# observacao: Retorno TABNET em formato prn separado por ponto e virgula; arquivo salvo como CSV UTF-8.
+
+Faixa Et&aacute;ria 1,2020,2021,2022,2023,2024,2025,2026,Total
+Menor 1 ano,"3,75","3,10","3,12","2,88","2,82","2,76","2,36","2,93"
+1 a 4 anos,"0,64","0,78","0,81","0,82","0,50","0,46","0,88","0,67"
+5 a 9 anos,"1,55","0,74","0,54","0,63","0,39","0,46","0,13","0,54"
+10 a 14 anos,"1,51","0,73","0,78","0,67","0,61","0,63","0,53","0,69"
+15 a 19 anos,"1,15","0,42","0,37","0,41","0,41","0,40","0,18","0,40"
+20 a 29 anos,"1,62","0,78","0,57","0,59","0,59","0,57","0,53","0,63"
+30 a 39 anos,"3,32","2,18","1,09","1,17","1,24","1,13","1,35","1,38"
+40 a 49 anos,"7,53","5,88","3,05","2,96","2,85","2,50","2,05","3,38"
+50 a 59 anos,"12,04","10,51","5,76","5,17","4,79","4,36","3,91","5,99"
+60 a 69 anos,"17,48","14,98","8,23","7,50","7,07","6,34","7,16","8,70"
+70 a 79 anos,"23,14","20,46","12,87","11,47","11,17","10,29","11,09","13,07"
+80 anos e mais,"30,49","27,47","20,47","18,50","17,36","16,53","18,58","19,94"
+Total,"7,93","5,45","3,49","3,26","3,18","3,02","3,23","3,69"
