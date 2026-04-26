@@ -1,0 +1,62 @@
+municipio,internacoes,obitos,taxa_mortalidade,grupo_volume,grupo_mortalidade,quadrante
+Alvaraes,4347,51,1.173222912353347,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Amatura,2952,28,0.9485094850948509,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Anama,6082,22,0.36172311739559354,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Anori,7046,54,0.7663922793074085,Maior volume,Menor mortalidade,Maior volume / Menor mortalidade
+Apui,5327,99,1.8584569175896375,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Atalaia Do Norte,3992,67,1.6783567134268536,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Autazes,8888,149,1.6764176417641763,Maior volume,Menor mortalidade,Maior volume / Menor mortalidade
+Barcelos,5357,128,2.3893970505880158,Menor volume,Maior mortalidade,Menor volume / Maior mortalidade
+Barreirinha,10657,219,2.05498733226987,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Benjamin Constant,9208,159,1.7267593397046046,Maior volume,Menor mortalidade,Maior volume / Menor mortalidade
+Beruri,5547,98,1.7667207499549304,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Boa Vista Do Ramos,5175,101,1.9516908212560384,Menor volume,Maior mortalidade,Menor volume / Maior mortalidade
+Boca Do Acre,12569,239,1.9015036995783279,Maior volume,Menor mortalidade,Maior volume / Menor mortalidade
+Borba,11454,173,1.5103893836214421,Maior volume,Menor mortalidade,Maior volume / Menor mortalidade
+Caapiranga,3455,42,1.215629522431259,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Canutama,3408,42,1.232394366197183,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Carauari,9713,207,2.1311644188201377,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Careiro,10386,227,2.1856345079915274,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Careiro Da Varzea,1586,82,5.170239596469105,Menor volume,Maior mortalidade,Menor volume / Maior mortalidade
+Coari,23638,924,3.908960148912768,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Codajas,7735,179,2.314156431803491,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Eirunepe,8518,266,3.1227987790561165,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Envira,5009,109,2.1760830505090833,Menor volume,Maior mortalidade,Menor volume / Maior mortalidade
+Fonte Boa,7676,148,1.9280875455966648,Maior volume,Menor mortalidade,Maior volume / Menor mortalidade
+Guajara,4835,99,2.047569803516029,Menor volume,Maior mortalidade,Menor volume / Maior mortalidade
+Humaita,13945,368,2.6389386877016854,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Ipixuna,10135,98,0.9669462259496794,Maior volume,Menor mortalidade,Maior volume / Menor mortalidade
+Iranduba,11548,423,3.662971943193626,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Itacoatiara,29979,998,3.3289969645418456,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Itamarati,3324,18,0.5415162454873645,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Itapiranga,3258,71,2.1792510742786986,Menor volume,Maior mortalidade,Menor volume / Maior mortalidade
+Japura,2268,29,1.2786596119929452,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Jutai,7697,46,0.5976354423801481,Maior volume,Menor mortalidade,Maior volume / Menor mortalidade
+Labrea,10293,193,1.8750607208782668,Maior volume,Menor mortalidade,Maior volume / Menor mortalidade
+Manacapuru,34988,1055,3.015319538127358,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Manaquiri,5533,85,1.536237122718236,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Manaus,600501,29011,4.831132670886476,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Manicore,12161,284,2.3353342652742373,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Maraa,3307,38,1.1490777139401271,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Maues,17808,530,2.976190476190476,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Nhamunda,4536,106,2.3368606701940036,Menor volume,Maior mortalidade,Menor volume / Maior mortalidade
+Nova Olinda Do Norte,7101,105,1.4786649767638362,Maior volume,Menor mortalidade,Maior volume / Menor mortalidade
+Novo Airao,5813,111,1.909513160158266,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Novo Aripuana,7624,93,1.219832109129066,Maior volume,Menor mortalidade,Maior volume / Menor mortalidade
+Parintins,39696,1166,2.9373236598145906,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Pauini,5516,120,2.1754894851341553,Menor volume,Maior mortalidade,Menor volume / Maior mortalidade
+Presidente Figueiredo,7830,286,3.6526181353767564,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Rio Preto Da Eva,5790,220,3.7996545768566494,Menor volume,Maior mortalidade,Menor volume / Maior mortalidade
+Santa Isabel Do Rio Negro,3369,66,1.9590382902938557,Menor volume,Maior mortalidade,Menor volume / Maior mortalidade
+Santo Antonio Do Ica,7935,102,1.285444234404537,Maior volume,Menor mortalidade,Maior volume / Menor mortalidade
+Sao Gabriel Da Cachoeira,10296,336,3.263403263403263,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Sao Paulo De Olivenca,9710,207,2.131822863027806,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Sao Sebastiao Do Uatuma,3865,75,1.9404915912031047,Menor volume,Maior mortalidade,Menor volume / Maior mortalidade
+Silves,4731,68,1.4373282604100612,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Tabatinga,8587,293,3.412134622103179,Maior volume,Maior mortalidade,Maior volume / Maior mortalidade
+Tapaua,5254,81,1.5416825275980206,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Tefe,28217,497,1.7613495410568096,Maior volume,Menor mortalidade,Maior volume / Menor mortalidade
+Tonantins,6560,70,1.0670731707317074,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Uarini,4890,65,1.329243353783231,Menor volume,Menor mortalidade,Menor volume / Menor mortalidade
+Urucara,4761,113,2.3734509556815797,Menor volume,Maior mortalidade,Menor volume / Maior mortalidade
+Urucurituba,2882,76,2.63705759888966,Menor volume,Maior mortalidade,Menor volume / Maior mortalidade

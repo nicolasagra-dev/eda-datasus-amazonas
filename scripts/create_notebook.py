@@ -48,9 +48,10 @@ cells = [
         ## Objetivos
 
         - Limpar dados exportados do TABNET, tratando valores nulos, tipos incorretos, totais e entidades HTML.
-        - Analisar internações por município, faixa etária e ano.
-        - Visualizar padrões com Seaborn/Matplotlib.
-        - Registrar uma conclusão interpretativa: **O que os dados revelam?**
+        - Analisar internações por município, faixa etária, ano e mortalidade hospitalar.
+        - Medir concentração territorial, crescimento e grupos de maior risco.
+        - Visualizar padrões com Seaborn/Matplotlib e exportar gráficos para o README.
+        - Registrar uma conclusão interpretativa e tecnicamente cautelosa: **O que os dados revelam?**
         """
     ),
     code(
@@ -66,6 +67,14 @@ cells = [
         sns.set_theme(style="whitegrid", context="notebook")
         plt.rcParams["figure.figsize"] = (11, 6)
         plt.rcParams["axes.titleweight"] = "bold"
+
+        def formatar_inteiro(valor: float) -> str:
+            return f"{valor:,.0f}".replace(",", ".")
+
+
+        def formatar_percentual(valor: float) -> str:
+            return f"{valor:.1f}%".replace(".", ",")
+
 
         PROJECT_ROOT = Path.cwd()
         if PROJECT_ROOT.name.lower() == "notebooks":
@@ -236,6 +245,13 @@ cells = [
         resumo_limpeza
         """
     ),
+    markdown(
+        """
+        **Leitura técnica da limpeza**
+
+        A transformação principal do projeto é converter tabelas agregadas do TABNET, originalmente largas e com formatação voltada à consulta visual, em bases analíticas no formato longo. Isso permite comparar anos, calcular taxas, gerar rankings e exportar dados tratados de forma reprodutível.
+        """
+    ),
     code(
         """
         dados_municipio.to_csv(PROCESSED_DIR / "internacoes_obitos_municipio_ano_am_limpo.csv", index=False)
@@ -254,6 +270,43 @@ cells = [
         )
         resumo_ano["taxa_mortalidade"] = resumo_ano["obitos"] / resumo_ano["internacoes"] * 100
         resumo_ano
+        """
+    ),
+    code(
+        """
+        total_internacoes = dados_municipio["internacoes"].sum()
+        total_obitos = dados_municipio["obitos"].sum()
+        internacoes_2021 = resumo_ano.loc[resumo_ano["ano"].eq(2021), "internacoes"].iloc[0]
+        internacoes_2025 = resumo_ano.loc[resumo_ano["ano"].eq(2025), "internacoes"].iloc[0]
+        crescimento_2021_2025 = (internacoes_2025 / internacoes_2021 - 1) * 100
+
+        indicadores_chave = pd.DataFrame(
+            {
+                "indicador": [
+                    "Internações analisadas",
+                    "Óbitos hospitalares",
+                    "Taxa de mortalidade hospitalar",
+                    "Crescimento das internações (2021-2025)",
+                    "Municípios analisados",
+                ],
+                "valor": [
+                    formatar_inteiro(total_internacoes),
+                    formatar_inteiro(total_obitos),
+                    formatar_percentual(total_obitos / total_internacoes * 100),
+                    formatar_percentual(crescimento_2021_2025),
+                    dados_municipio["municipio"].nunique(),
+                ],
+            }
+        )
+
+        indicadores_chave
+        """
+    ),
+    markdown(
+        """
+        **Leitura**
+
+        O volume de internações cresce de forma mais clara a partir de 2024. Como a base é agregada e não ajustada por população, a análise deve ser lida como demanda hospitalar registrada no SIH/SUS, não como risco individual de adoecimento.
         """
     ),
     code(
@@ -285,6 +338,34 @@ cells = [
     ),
     code(
         """
+        ranking_municipios = (
+            dados_municipio.groupby("municipio", as_index=False)
+            .agg(internacoes=("internacoes", "sum"), obitos=("obitos", "sum"))
+            .sort_values("internacoes", ascending=False)
+            .reset_index(drop=True)
+        )
+        ranking_municipios["posicao"] = ranking_municipios.index + 1
+        ranking_municipios["participacao_%"] = ranking_municipios["internacoes"] / total_internacoes * 100
+        ranking_municipios["participacao_acumulada_%"] = ranking_municipios["participacao_%"].cumsum()
+        ranking_municipios["taxa_mortalidade"] = ranking_municipios["obitos"] / ranking_municipios["internacoes"] * 100
+
+        concentracao = pd.DataFrame(
+            {
+                "recorte": ["Top 1", "Top 5", "Top 10", "Demais municípios"],
+                "participacao_%": [
+                    ranking_municipios.head(1)["participacao_%"].sum(),
+                    ranking_municipios.head(5)["participacao_%"].sum(),
+                    ranking_municipios.head(10)["participacao_%"].sum(),
+                    100 - ranking_municipios.head(10)["participacao_%"].sum(),
+                ],
+            }
+        )
+
+        concentracao
+        """
+    ),
+    code(
+        """
         fig, ax = plt.subplots(figsize=(11, 7))
         sns.barplot(
             data=top_municipios,
@@ -300,6 +381,38 @@ cells = [
         ax.set_ylabel("")
         ax.ticklabel_format(style="plain", axis="x")
         fig.savefig(PROCESSED_DIR / "internacoes_municipio.png", dpi=150, bbox_inches="tight")
+        plt.show()
+        """
+    ),
+    code(
+        """
+        fig, ax1 = plt.subplots(figsize=(11, 6))
+        pareto = ranking_municipios.head(20).copy()
+
+        sns.barplot(
+            data=pareto,
+            x="posicao",
+            y="internacoes",
+            color="#4C78A8",
+            ax=ax1,
+        )
+        ax1.set_title("Concentração das internações: Pareto dos 20 primeiros municípios")
+        ax1.set_xlabel("Posição no ranking de internações")
+        ax1.set_ylabel("Internações")
+        ax1.ticklabel_format(style="plain", axis="y")
+
+        ax2 = ax1.twinx()
+        sns.lineplot(
+            data=pareto,
+            x="posicao",
+            y="participacao_acumulada_%",
+            marker="o",
+            color="#F58518",
+            ax=ax2,
+        )
+        ax2.set_ylabel("Participação acumulada (%)")
+        ax2.set_ylim(0, 100)
+        fig.savefig(PROCESSED_DIR / "pareto_municipios.png", dpi=150, bbox_inches="tight")
         plt.show()
         """
     ),
@@ -324,6 +437,50 @@ cells = [
         ax.ticklabel_format(style="plain", axis="y")
         plt.legend(title="Município")
         fig.savefig(PROCESSED_DIR / "evolucao_top5_municipios.png", dpi=150, bbox_inches="tight")
+        plt.show()
+        """
+    ),
+    code(
+        """
+        crescimento_municipios = (
+            dados_municipio.pivot_table(
+                index="municipio",
+                columns="ano",
+                values="internacoes",
+                aggfunc="sum",
+            )
+            .reset_index()
+        )
+        crescimento_municipios["variacao_abs_2021_2025"] = crescimento_municipios[2025] - crescimento_municipios[2021]
+        crescimento_municipios["variacao_%_2021_2025"] = np.where(
+            crescimento_municipios[2021] > 0,
+            (crescimento_municipios[2025] / crescimento_municipios[2021] - 1) * 100,
+            np.nan,
+        )
+        crescimento_municipios = crescimento_municipios.sort_values("variacao_abs_2021_2025", ascending=False)
+
+        crescimento_municipios.head(10)
+        """
+    ),
+    code(
+        """
+        top_crescimento_abs = crescimento_municipios.head(10).copy()
+
+        fig, ax = plt.subplots(figsize=(11, 7))
+        sns.barplot(
+            data=top_crescimento_abs,
+            y="municipio",
+            x="variacao_abs_2021_2025",
+            hue="municipio",
+            legend=False,
+            palette="viridis",
+            ax=ax,
+        )
+        ax.set_title("Municípios com maior aumento absoluto de internações (2021-2025)")
+        ax.set_xlabel("Aumento de internações")
+        ax.set_ylabel("")
+        ax.ticklabel_format(style="plain", axis="x")
+        fig.savefig(PROCESSED_DIR / "crescimento_municipios.png", dpi=150, bbox_inches="tight")
         plt.show()
         """
     ),
@@ -380,6 +537,40 @@ cells = [
         ax.set_ylabel("Faixa etária")
         fig.savefig(PROCESSED_DIR / "heatmap_faixa_ano.png", dpi=150, bbox_inches="tight")
         plt.show()
+        """
+    ),
+    code(
+        """
+        composicao_faixa_ano = internacoes_faixa.copy()
+        composicao_faixa_ano["participacao_ano_%"] = (
+            composicao_faixa_ano["internacoes"]
+            / composicao_faixa_ano.groupby("ano", observed=True)["internacoes"].transform("sum")
+            * 100
+        )
+
+        fig, ax = plt.subplots(figsize=(11, 7))
+        sns.lineplot(
+            data=composicao_faixa_ano,
+            x="ano",
+            y="participacao_ano_%",
+            hue="faixa_etaria",
+            marker="o",
+            linewidth=1.8,
+            ax=ax,
+        )
+        ax.set_title("Participação das faixas etárias nas internações por ano")
+        ax.set_xlabel("Ano")
+        ax.set_ylabel("Participação no ano (%)")
+        plt.legend(title="Faixa etária", bbox_to_anchor=(1.02, 1), loc="upper left")
+        fig.savefig(PROCESSED_DIR / "composicao_faixa_ano.png", dpi=150, bbox_inches="tight")
+        plt.show()
+        """
+    ),
+    markdown(
+        """
+        **Leitura**
+
+        As faixas de 20 a 39 anos têm maior volume absoluto de internações, mas a análise de mortalidade mostra outra dimensão do problema: volume e gravidade não apontam necessariamente para os mesmos grupos.
         """
     ),
     markdown("## Mortalidade"),
@@ -441,6 +632,55 @@ cells = [
         plt.show()
         """
     ),
+    code(
+        """
+        municipios_matriz = dados_municipio_total[dados_municipio_total["internacoes"] >= 1000].copy()
+        municipios_matriz["grupo_volume"] = np.where(
+            municipios_matriz["internacoes"] >= municipios_matriz["internacoes"].median(),
+            "Maior volume",
+            "Menor volume",
+        )
+        municipios_matriz["grupo_mortalidade"] = np.where(
+            municipios_matriz["taxa_mortalidade"] >= municipios_matriz["taxa_mortalidade"].median(),
+            "Maior mortalidade",
+            "Menor mortalidade",
+        )
+        municipios_matriz["quadrante"] = municipios_matriz["grupo_volume"] + " / " + municipios_matriz["grupo_mortalidade"]
+
+        municipios_matriz.sort_values("taxa_mortalidade", ascending=False).head(10)
+        """
+    ),
+    code(
+        """
+        fig, ax = plt.subplots(figsize=(11, 7))
+        sns.scatterplot(
+            data=municipios_matriz,
+            x="internacoes",
+            y="taxa_mortalidade",
+            hue="quadrante",
+            size="obitos",
+            sizes=(40, 260),
+            alpha=0.75,
+            ax=ax,
+        )
+        ax.axvline(municipios_matriz["internacoes"].median(), color="gray", linestyle="--", linewidth=1)
+        ax.axhline(municipios_matriz["taxa_mortalidade"].median(), color="gray", linestyle="--", linewidth=1)
+        ax.set_title("Matriz volume x mortalidade por município")
+        ax.set_xlabel("Internações acumuladas")
+        ax.set_ylabel("Taxa de mortalidade hospitalar (%)")
+        ax.ticklabel_format(style="plain", axis="x")
+        plt.legend(title="Quadrante", bbox_to_anchor=(1.02, 1), loc="upper left")
+        fig.savefig(PROCESSED_DIR / "matriz_volume_mortalidade.png", dpi=150, bbox_inches="tight")
+        plt.show()
+        """
+    ),
+    markdown(
+        """
+        **Leitura**
+
+        A matriz ajuda a evitar uma conclusão superficial. Municípios com muitas internações tendem a concentrar óbitos em números absolutos, mas municípios com menor volume podem apresentar taxas de mortalidade proporcionalmente altas. Para uma avaliação de gestão, esses casos seriam bons candidatos a investigação qualitativa: perfil dos hospitais, distância até serviços de maior complexidade, composição etária e tipos de diagnóstico.
+        """
+    ),
     markdown(
         """
         ## Exportação final
@@ -452,6 +692,12 @@ cells = [
         """
         dados_municipio.to_csv(PROCESSED_DIR / "municipios_tratados.csv", index=False)
         resumo_faixa.to_csv(PROCESSED_DIR / "resumo_faixa_etaria.csv", index=False)
+        resumo_ano.to_csv(PROCESSED_DIR / "resumo_ano.csv", index=False)
+        ranking_municipios.to_csv(PROCESSED_DIR / "ranking_municipios.csv", index=False)
+        concentracao.to_csv(PROCESSED_DIR / "concentracao_municipios.csv", index=False)
+        crescimento_municipios.to_csv(PROCESSED_DIR / "crescimento_municipios.csv", index=False)
+        municipios_matriz.to_csv(PROCESSED_DIR / "matriz_volume_mortalidade.csv", index=False)
+        taxa_media_faixa.to_csv(PROCESSED_DIR / "resumo_taxa_mortalidade_faixa.csv", index=False)
 
         sorted(path.name for path in PROCESSED_DIR.glob("*"))
         """
@@ -462,13 +708,20 @@ cells = [
 
         Entre 2021 e 2025, os dados do SIH/SUS indicam **1.137.197 internações hospitalares** de residentes no Amazonas. O volume anual ficou relativamente estável entre 2021 e 2023, cresceu em 2024 e atingiu o maior valor em 2025, com alta de aproximadamente **21,2%** em relação a 2021.
 
-        A distribuição municipal é bastante concentrada: **Manaus responde por cerca de 52,8% das internações** do período, seguida por Parintins, Manacapuru, Itacoatiara e Tefé. Esse padrão reflete tanto o peso populacional da capital quanto a centralidade de sua rede assistencial.
+        A distribuição municipal é bastante concentrada: **Manaus responde por cerca de 52,8% das internações** do período, seguida por Parintins, Manacapuru, Itacoatiara e Tefé. O gráfico de Pareto mostra que poucos municípios concentram grande parte da demanda, o que combina peso populacional, centralidade da rede assistencial e possíveis fluxos de atendimento para polos regionais.
 
         Por idade, as faixas de **20 a 29 anos** e **30 a 39 anos** concentram o maior número de internações. Sem cruzar com sexo, diagnóstico ou procedimento, não dá para afirmar a causa, mas o padrão sugere investigar eventos ligados ao ciclo reprodutivo, causas clínicas frequentes em adultos jovens e acesso hospitalar por perfil demográfico.
 
-        A mortalidade hospitalar cresce com a idade. As maiores taxas médias aparecem em **80 anos e mais**, **70 a 79 anos** e **60 a 69 anos**, o que é coerente com maior fragilidade clínica e maior gravidade esperada das internações em idosos.
+        A mortalidade hospitalar cresce com a idade. As maiores taxas médias aparecem em **80 anos e mais**, **70 a 79 anos** e **60 a 69 anos**, o que é coerente com maior fragilidade clínica e maior gravidade esperada das internações em idosos. Já a matriz volume x mortalidade mostra que o maior número absoluto de óbitos não deve ser confundido com maior taxa proporcional: são leituras complementares.
 
-        Como o TABNET agrega dados de internações do SUS, os resultados não representam toda a morbidade da população nem internações exclusivamente privadas. Ainda assim, revelam um retrato útil da demanda hospitalar pública e conveniada no Amazonas.
+        Como o TABNET agrega dados de internações do SUS, os resultados não representam toda a morbidade da população nem internações exclusivamente privadas. Ainda assim, revelam um retrato útil da demanda hospitalar pública e conveniada no Amazonas, com evidências claras de concentração territorial, crescimento recente das internações e maior mortalidade proporcional nas faixas etárias idosas.
+        """
+    ),
+    markdown(
+        """
+        ## Próximos passos analíticos
+
+        Para aprofundar este EDA, os próximos recortes mais relevantes seriam cruzar município e faixa etária com sexo, capítulo CID-10, lista de morbidade e caráter de atendimento. Também seria importante trazer população municipal do IBGE para calcular taxas por habitante, reduzindo o viés de comparar apenas volumes absolutos.
         """
     ),
 ]

@@ -1,6 +1,16 @@
-# Projeto 1 - EDA DataSUS: Morbidade Hospitalar no Amazonas
+# EDA DataSUS: Morbidade Hospitalar no Amazonas
 
-Análise exploratória de dados de morbidade hospitalar do SUS para residentes no Amazonas, com foco em município, faixa etária e ano.
+Análise exploratória de dados de morbidade hospitalar do SUS para residentes no Amazonas, com foco em município, faixa etária, ano, concentração territorial e mortalidade hospitalar.
+
+O objetivo do projeto é demonstrar um fluxo completo de análise de dados: coleta em fonte pública, limpeza, transformação, geração de indicadores, visualização e síntese interpretativa.
+
+## Perguntas orientadoras
+
+- Como as internações hospitalares evoluíram entre 2021 e 2025?
+- Quais municípios concentram a maior parte da demanda hospitalar registrada no SIH/SUS?
+- Quais faixas etárias concentram maior volume de internações?
+- A mortalidade hospitalar acompanha o volume de internações ou revela outro padrão?
+- Que limitações precisam ser consideradas antes de transformar a análise em decisão?
 
 ## Fonte dos dados
 
@@ -40,8 +50,9 @@ Os dados foram obtidos no **DATASUS/TABNET**, em:
    - conversão de `-` para zero;
    - conversão de tipos numéricos e taxa com vírgula decimal;
    - separação do código IBGE e nome do município.
-4. Análise por município, faixa etária e ano.
-5. Visualização com Seaborn/Matplotlib.
+4. Cálculo de indicadores por ano, município, faixa etária e mortalidade.
+5. Análise de concentração territorial, crescimento municipal e matriz volume x mortalidade.
+6. Visualização com Seaborn/Matplotlib e exportação dos gráficos para `data/processed/`.
 
 ## Como executar
 
@@ -90,11 +101,36 @@ O notebook também gera arquivos limpos em `data/processed/`.
 - **Manaus concentrou 52,8%** das internações do período, seguida por Parintins, Manacapuru, Itacoatiara e Tefé.
 - As faixas etárias com maior volume foram **20 a 29 anos** e **30 a 39 anos**.
 - A taxa média de mortalidade hospitalar foi mais alta nas faixas **80 anos e mais**, **70 a 79 anos** e **60 a 69 anos**.
+- A análise de Pareto reforça a concentração territorial da demanda hospitalar.
+- A matriz volume x mortalidade mostra que municípios com maior volume absoluto de óbitos não são necessariamente os de maior mortalidade proporcional.
 
 ## Exemplos de visualização
 
 ![Internações por município](data/processed/internacoes_municipio.png)
 
+![Pareto de municípios](data/processed/pareto_municipios.png)
+
+![Matriz volume x mortalidade](data/processed/matriz_volume_mortalidade.png)
+
+## Dados gerados
+
+Além dos CSVs brutos em `data/raw/`, o notebook exporta bases tratadas e resumos em `data/processed/`, incluindo:
+
+- `municipios_tratados.csv`
+- `ranking_municipios.csv`
+- `crescimento_municipios.csv`
+- `matriz_volume_mortalidade.csv`
+- `resumo_faixa_etaria.csv`
+- `resumo_ano.csv`
+
+Esses arquivos evidenciam a etapa de integração e transformação dos dados para uso em análises.
+
+## Avaliação técnica
+
+Uma leitura técnica do projeto, com pontos fortes, limitações e próximos passos, está disponível em [docs/avaliacao_tecnica.md](docs/avaliacao_tecnica.md).
+
 ## Observações
 
 Os dados representam internações registradas no SIH/SUS e não incluem todo o atendimento privado fora do SUS. Como 2026 ainda está incompleto no momento do download, os gráficos e conclusões anuais usam 2021 a 2025.
+
+Os resultados não foram ajustados por população municipal. Portanto, rankings por volume não devem ser lidos como risco individual de adoecimento. Um próximo passo natural seria integrar população municipal do IBGE para calcular taxas por habitante.
