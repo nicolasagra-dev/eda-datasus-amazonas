@@ -1,0 +1,311 @@
+codigo_municipio,codigo_ibge_7,municipio,ano,populacao,fonte_populacao
+130002,1300029,Alvarães,2021,16396,IBGE - Estimativas de populacao
+130002,1300029,Alvarães,2022,15866,IBGE - Censo Demografico 2022
+130002,1300029,Alvarães,2023,16268,Interpolacao linear entre Censo 2022 e estimativa 2024
+130002,1300029,Alvarães,2024,16670,IBGE - Estimativas de populacao
+130002,1300029,Alvarães,2025,16806,IBGE - Estimativas de populacao
+130006,1300060,Amaturá,2021,11934,IBGE - Estimativas de populacao
+130006,1300060,Amaturá,2022,10819,IBGE - Censo Demografico 2022
+130006,1300060,Amaturá,2023,11115,Interpolacao linear entre Censo 2022 e estimativa 2024
+130006,1300060,Amaturá,2024,11411,IBGE - Estimativas de populacao
+130006,1300060,Amaturá,2025,11533,IBGE - Estimativas de populacao
+130008,1300086,Anamã,2021,14292,IBGE - Estimativas de populacao
+130008,1300086,Anamã,2022,9962,IBGE - Censo Demografico 2022
+130008,1300086,Anamã,2023,10140,Interpolacao linear entre Censo 2022 e estimativa 2024
+130008,1300086,Anamã,2024,10318,IBGE - Estimativas de populacao
+130008,1300086,Anamã,2025,9981,IBGE - Estimativas de populacao
+130010,1300102,Anori,2021,21937,IBGE - Estimativas de populacao
+130010,1300102,Anori,2022,17194,IBGE - Censo Demografico 2022
+130010,1300102,Anori,2023,17563,Interpolacao linear entre Censo 2022 e estimativa 2024
+130010,1300102,Anori,2024,17932,IBGE - Estimativas de populacao
+130010,1300102,Anori,2025,18056,IBGE - Estimativas de populacao
+130014,1300144,Apuí,2021,22739,IBGE - Estimativas de populacao
+130014,1300144,Apuí,2022,20647,IBGE - Censo Demografico 2022
+130014,1300144,Apuí,2023,21191,Interpolacao linear entre Censo 2022 e estimativa 2024
+130014,1300144,Apuí,2024,21735,IBGE - Estimativas de populacao
+130014,1300144,Apuí,2025,21781,IBGE - Estimativas de populacao
+130020,1300201,Atalaia do Norte,2021,20868,IBGE - Estimativas de populacao
+130020,1300201,Atalaia do Norte,2022,15314,IBGE - Censo Demografico 2022
+130020,1300201,Atalaia do Norte,2023,15603,Interpolacao linear entre Censo 2022 e estimativa 2024
+130020,1300201,Atalaia do Norte,2024,15892,IBGE - Estimativas de populacao
+130020,1300201,Atalaia do Norte,2025,15889,IBGE - Estimativas de populacao
+130030,1300300,Autazes,2021,41005,IBGE - Estimativas de populacao
+130030,1300300,Autazes,2022,41564,IBGE - Censo Demografico 2022
+130030,1300300,Autazes,2023,43446,Interpolacao linear entre Censo 2022 e estimativa 2024
+130030,1300300,Autazes,2024,45328,IBGE - Estimativas de populacao
+130030,1300300,Autazes,2025,45960,IBGE - Estimativas de populacao
+130040,1300409,Barcelos,2021,27772,IBGE - Estimativas de populacao
+130040,1300409,Barcelos,2022,18834,IBGE - Censo Demografico 2022
+130040,1300409,Barcelos,2023,18730,Interpolacao linear entre Censo 2022 e estimativa 2024
+130040,1300409,Barcelos,2024,18626,IBGE - Estimativas de populacao
+130040,1300409,Barcelos,2025,18210,IBGE - Estimativas de populacao
+130050,1300508,Barreirinha,2021,32919,IBGE - Estimativas de populacao
+130050,1300508,Barreirinha,2022,31051,IBGE - Censo Demografico 2022
+130050,1300508,Barreirinha,2023,32244,Interpolacao linear entre Censo 2022 e estimativa 2024
+130050,1300508,Barreirinha,2024,33436,IBGE - Estimativas de populacao
+130050,1300508,Barreirinha,2025,33722,IBGE - Estimativas de populacao
+130060,1300607,Benjamin Constant,2021,44873,IBGE - Estimativas de populacao
+130060,1300607,Benjamin Constant,2022,37648,IBGE - Censo Demografico 2022
+130060,1300607,Benjamin Constant,2023,39078,Interpolacao linear entre Censo 2022 e estimativa 2024
+130060,1300607,Benjamin Constant,2024,40509,IBGE - Estimativas de populacao
+130060,1300607,Benjamin Constant,2025,40908,IBGE - Estimativas de populacao
+130063,1300631,Beruri,2021,20503,IBGE - Estimativas de populacao
+130063,1300631,Beruri,2022,20718,IBGE - Censo Demografico 2022
+130063,1300631,Beruri,2023,21427,Interpolacao linear entre Censo 2022 e estimativa 2024
+130063,1300631,Beruri,2024,22136,IBGE - Estimativas de populacao
+130063,1300631,Beruri,2025,22495,IBGE - Estimativas de populacao
+130068,1300680,Boa Vista do Ramos,2021,20040,IBGE - Estimativas de populacao
+130068,1300680,Boa Vista do Ramos,2022,23785,IBGE - Censo Demografico 2022
+130068,1300680,Boa Vista do Ramos,2023,24777,Interpolacao linear entre Censo 2022 e estimativa 2024
+130068,1300680,Boa Vista do Ramos,2024,25769,IBGE - Estimativas de populacao
+130068,1300680,Boa Vista do Ramos,2025,26479,IBGE - Estimativas de populacao
+130070,1300706,Boca do Acre,2021,34958,IBGE - Estimativas de populacao
+130070,1300706,Boca do Acre,2022,35447,IBGE - Censo Demografico 2022
+130070,1300706,Boca do Acre,2023,36846,Interpolacao linear entre Censo 2022 e estimativa 2024
+130070,1300706,Boca do Acre,2024,38246,IBGE - Estimativas de populacao
+130070,1300706,Boca do Acre,2025,38792,IBGE - Estimativas de populacao
+130080,1300805,Borba,2021,42328,IBGE - Estimativas de populacao
+130080,1300805,Borba,2022,33080,IBGE - Censo Demografico 2022
+130080,1300805,Borba,2023,33980,Interpolacao linear entre Censo 2022 e estimativa 2024
+130080,1300805,Borba,2024,34879,IBGE - Estimativas de populacao
+130080,1300805,Borba,2025,34869,IBGE - Estimativas de populacao
+130083,1300839,Caapiranga,2021,13482,IBGE - Estimativas de populacao
+130083,1300839,Caapiranga,2022,13469,IBGE - Censo Demografico 2022
+130083,1300839,Caapiranga,2023,13890,Interpolacao linear entre Censo 2022 e estimativa 2024
+130083,1300839,Caapiranga,2024,14310,IBGE - Estimativas de populacao
+130083,1300839,Caapiranga,2025,14806,IBGE - Estimativas de populacao
+130090,1300904,Canutama,2021,15981,IBGE - Estimativas de populacao
+130090,1300904,Canutama,2022,16869,IBGE - Censo Demografico 2022
+130090,1300904,Canutama,2023,17377,Interpolacao linear entre Censo 2022 e estimativa 2024
+130090,1300904,Canutama,2024,17885,IBGE - Estimativas de populacao
+130090,1300904,Canutama,2025,18109,IBGE - Estimativas de populacao
+130100,1301001,Carauari,2021,28719,IBGE - Estimativas de populacao
+130100,1301001,Carauari,2022,28742,IBGE - Censo Demografico 2022
+130100,1301001,Carauari,2023,29817,Interpolacao linear entre Censo 2022 e estimativa 2024
+130100,1301001,Carauari,2024,30892,IBGE - Estimativas de populacao
+130100,1301001,Carauari,2025,31130,IBGE - Estimativas de populacao
+130110,1301100,Careiro,2021,38820,IBGE - Estimativas de populacao
+130110,1301100,Careiro,2022,30792,IBGE - Censo Demografico 2022
+130110,1301100,Careiro,2023,31617,Interpolacao linear entre Censo 2022 e estimativa 2024
+130110,1301100,Careiro,2024,32442,IBGE - Estimativas de populacao
+130110,1301100,Careiro,2025,32336,IBGE - Estimativas de populacao
+130115,1301159,Careiro da Várzea,2021,31459,IBGE - Estimativas de populacao
+130115,1301159,Careiro da Várzea,2022,19637,IBGE - Censo Demografico 2022
+130115,1301159,Careiro da Várzea,2023,19723,Interpolacao linear entre Censo 2022 e estimativa 2024
+130115,1301159,Careiro da Várzea,2024,19809,IBGE - Estimativas de populacao
+130115,1301159,Careiro da Várzea,2025,20324,IBGE - Estimativas de populacao
+130120,1301209,Coari,2021,86713,IBGE - Estimativas de populacao
+130120,1301209,Coari,2022,70616,IBGE - Censo Demografico 2022
+130120,1301209,Coari,2023,72218,Interpolacao linear entre Censo 2022 e estimativa 2024
+130120,1301209,Coari,2024,73820,IBGE - Estimativas de populacao
+130120,1301209,Coari,2025,73576,IBGE - Estimativas de populacao
+130130,1301308,Codajás,2021,29691,IBGE - Estimativas de populacao
+130130,1301308,Codajás,2022,23549,IBGE - Censo Demografico 2022
+130130,1301308,Codajás,2023,24000,Interpolacao linear entre Censo 2022 e estimativa 2024
+130130,1301308,Codajás,2024,24451,IBGE - Estimativas de populacao
+130130,1301308,Codajás,2025,24572,IBGE - Estimativas de populacao
+130140,1301407,Eirunepé,2021,36121,IBGE - Estimativas de populacao
+130140,1301407,Eirunepé,2022,33170,IBGE - Censo Demografico 2022
+130140,1301407,Eirunepé,2023,34352,Interpolacao linear entre Censo 2022 e estimativa 2024
+130140,1301407,Eirunepé,2024,35534,IBGE - Estimativas de populacao
+130140,1301407,Eirunepé,2025,35793,IBGE - Estimativas de populacao
+130150,1301506,Envira,2021,20748,IBGE - Estimativas de populacao
+130150,1301506,Envira,2022,17186,IBGE - Censo Demografico 2022
+130150,1301506,Envira,2023,17553,Interpolacao linear entre Censo 2022 e estimativa 2024
+130150,1301506,Envira,2024,17920,IBGE - Estimativas de populacao
+130150,1301506,Envira,2025,17985,IBGE - Estimativas de populacao
+130160,1301605,Fonte Boa,2021,16409,IBGE - Estimativas de populacao
+130160,1301605,Fonte Boa,2022,25871,IBGE - Censo Demografico 2022
+130160,1301605,Fonte Boa,2023,26873,Interpolacao linear entre Censo 2022 e estimativa 2024
+130160,1301605,Fonte Boa,2024,27875,IBGE - Estimativas de populacao
+130160,1301605,Fonte Boa,2025,28227,IBGE - Estimativas de populacao
+130165,1301654,Guajará,2021,17193,IBGE - Estimativas de populacao
+130165,1301654,Guajará,2022,13815,IBGE - Censo Demografico 2022
+130165,1301654,Guajará,2023,14074,Interpolacao linear entre Censo 2022 e estimativa 2024
+130165,1301654,Guajará,2024,14332,IBGE - Estimativas de populacao
+130165,1301654,Guajará,2025,14344,IBGE - Estimativas de populacao
+130170,1301704,Humaitá,2021,57195,IBGE - Estimativas de populacao
+130170,1301704,Humaitá,2022,57473,IBGE - Censo Demografico 2022
+130170,1301704,Humaitá,2023,59892,Interpolacao linear entre Censo 2022 e estimativa 2024
+130170,1301704,Humaitá,2024,62312,IBGE - Estimativas de populacao
+130170,1301704,Humaitá,2025,63454,IBGE - Estimativas de populacao
+130180,1301803,Ipixuna,2021,31172,IBGE - Estimativas de populacao
+130180,1301803,Ipixuna,2022,24311,IBGE - Censo Demografico 2022
+130180,1301803,Ipixuna,2023,24884,Interpolacao linear entre Censo 2022 e estimativa 2024
+130180,1301803,Ipixuna,2024,25458,IBGE - Estimativas de populacao
+130180,1301803,Ipixuna,2025,25629,IBGE - Estimativas de populacao
+130185,1301852,Iranduba,2021,49718,IBGE - Estimativas de populacao
+130185,1301852,Iranduba,2022,61163,IBGE - Censo Demografico 2022
+130185,1301852,Iranduba,2023,64138,Interpolacao linear entre Censo 2022 e estimativa 2024
+130185,1301852,Iranduba,2024,67114,IBGE - Estimativas de populacao
+130185,1301852,Iranduba,2025,68862,IBGE - Estimativas de populacao
+130190,1301902,Itacoatiara,2021,104046,IBGE - Estimativas de populacao
+130190,1301902,Itacoatiara,2022,103598,IBGE - Censo Demografico 2022
+130190,1301902,Itacoatiara,2023,108059,Interpolacao linear entre Censo 2022 e estimativa 2024
+130190,1301902,Itacoatiara,2024,112520,IBGE - Estimativas de populacao
+130190,1301902,Itacoatiara,2025,113917,IBGE - Estimativas de populacao
+130195,1301951,Itamarati,2021,7777,IBGE - Estimativas de populacao
+130195,1301951,Itamarati,2022,10937,IBGE - Censo Demografico 2022
+130195,1301951,Itamarati,2023,11334,Interpolacao linear entre Censo 2022 e estimativa 2024
+130195,1301951,Itamarati,2024,11730,IBGE - Estimativas de populacao
+130195,1301951,Itamarati,2025,11956,IBGE - Estimativas de populacao
+130200,1302009,Itapiranga,2021,9312,IBGE - Estimativas de populacao
+130200,1302009,Itapiranga,2022,10162,IBGE - Censo Demografico 2022
+130200,1302009,Itapiranga,2023,10484,Interpolacao linear entre Censo 2022 e estimativa 2024
+130200,1302009,Itapiranga,2024,10805,IBGE - Estimativas de populacao
+130200,1302009,Itapiranga,2025,10955,IBGE - Estimativas de populacao
+130210,1302108,Japurá,2021,1755,IBGE - Estimativas de populacao
+130210,1302108,Japurá,2022,8858,IBGE - Censo Demografico 2022
+130210,1302108,Japurá,2023,9128,Interpolacao linear entre Censo 2022 e estimativa 2024
+130210,1302108,Japurá,2024,9397,IBGE - Estimativas de populacao
+130210,1302108,Japurá,2025,9420,IBGE - Estimativas de populacao
+130220,1302207,Juruá,2021,15495,IBGE - Estimativas de populacao
+130220,1302207,Juruá,2022,10742,IBGE - Censo Demografico 2022
+130220,1302207,Juruá,2023,10947,Interpolacao linear entre Censo 2022 e estimativa 2024
+130220,1302207,Juruá,2024,11152,IBGE - Estimativas de populacao
+130220,1302207,Juruá,2025,11093,IBGE - Estimativas de populacao
+130230,1302306,Jutaí,2021,13462,IBGE - Estimativas de populacao
+130230,1302306,Jutaí,2022,25172,IBGE - Censo Demografico 2022
+130230,1302306,Jutaí,2023,26414,Interpolacao linear entre Censo 2022 e estimativa 2024
+130230,1302306,Jutaí,2024,27656,IBGE - Estimativas de populacao
+130230,1302306,Jutaí,2025,28202,IBGE - Estimativas de populacao
+130240,1302405,Lábrea,2021,47685,IBGE - Estimativas de populacao
+130240,1302405,Lábrea,2022,45448,IBGE - Censo Demografico 2022
+130240,1302405,Lábrea,2023,47188,Interpolacao linear entre Censo 2022 e estimativa 2024
+130240,1302405,Lábrea,2024,48927,IBGE - Estimativas de populacao
+130240,1302405,Lábrea,2025,49469,IBGE - Estimativas de populacao
+130250,1302504,Manacapuru,2021,99613,IBGE - Estimativas de populacao
+130250,1302504,Manacapuru,2022,101883,IBGE - Censo Demografico 2022
+130250,1302504,Manacapuru,2023,106287,Interpolacao linear entre Censo 2022 e estimativa 2024
+130250,1302504,Manacapuru,2024,110691,IBGE - Estimativas de populacao
+130250,1302504,Manacapuru,2025,111751,IBGE - Estimativas de populacao
+130255,1302553,Manaquiri,2021,33981,IBGE - Estimativas de populacao
+130255,1302553,Manaquiri,2022,17107,IBGE - Censo Demografico 2022
+130255,1302553,Manaquiri,2023,17058,Interpolacao linear entre Censo 2022 e estimativa 2024
+130255,1302553,Manaquiri,2024,17009,IBGE - Estimativas de populacao
+130255,1302553,Manaquiri,2025,16211,IBGE - Estimativas de populacao
+130260,1302603,Manaus,2021,2255903,IBGE - Estimativas de populacao
+130260,1302603,Manaus,2022,2063689,IBGE - Censo Demografico 2022
+130260,1302603,Manaus,2023,2171688,Interpolacao linear entre Censo 2022 e estimativa 2024
+130260,1302603,Manaus,2024,2279686,IBGE - Estimativas de populacao
+130260,1302603,Manaus,2025,2303732,IBGE - Estimativas de populacao
+130270,1302702,Manicoré,2021,57405,IBGE - Estimativas de populacao
+130270,1302702,Manicoré,2022,53914,IBGE - Censo Demografico 2022
+130270,1302702,Manicoré,2023,55836,Interpolacao linear entre Censo 2022 e estimativa 2024
+130270,1302702,Manicoré,2024,57758,IBGE - Estimativas de populacao
+130270,1302702,Manicoré,2025,58018,IBGE - Estimativas de populacao
+130280,1302801,Maraã,2021,18298,IBGE - Estimativas de populacao
+130280,1302801,Maraã,2022,15529,IBGE - Censo Demografico 2022
+130280,1302801,Maraã,2023,15686,Interpolacao linear entre Censo 2022 e estimativa 2024
+130280,1302801,Maraã,2024,15843,IBGE - Estimativas de populacao
+130280,1302801,Maraã,2025,15815,IBGE - Estimativas de populacao
+130290,1302900,Maués,2021,66159,IBGE - Estimativas de populacao
+130290,1302900,Maués,2022,61204,IBGE - Censo Demografico 2022
+130290,1302900,Maués,2023,63459,Interpolacao linear entre Censo 2022 e estimativa 2024
+130290,1302900,Maués,2024,65714,IBGE - Estimativas de populacao
+130290,1302900,Maués,2025,66336,IBGE - Estimativas de populacao
+130300,1303007,Nhamundá,2021,21710,IBGE - Estimativas de populacao
+130300,1303007,Nhamundá,2022,20136,IBGE - Censo Demografico 2022
+130300,1303007,Nhamundá,2023,20621,Interpolacao linear entre Censo 2022 e estimativa 2024
+130300,1303007,Nhamundá,2024,21106,IBGE - Estimativas de populacao
+130300,1303007,Nhamundá,2025,21251,IBGE - Estimativas de populacao
+130310,1303106,Nova Olinda do Norte,2021,38665,IBGE - Estimativas de populacao
+130310,1303106,Nova Olinda do Norte,2022,27062,IBGE - Censo Demografico 2022
+130310,1303106,Nova Olinda do Norte,2023,27664,Interpolacao linear entre Censo 2022 e estimativa 2024
+130310,1303106,Nova Olinda do Norte,2024,28267,IBGE - Estimativas de populacao
+130310,1303106,Nova Olinda do Norte,2025,28123,IBGE - Estimativas de populacao
+130320,1303205,Novo Airão,2021,20395,IBGE - Estimativas de populacao
+130320,1303205,Novo Airão,2022,15761,IBGE - Censo Demografico 2022
+130320,1303205,Novo Airão,2023,16114,Interpolacao linear entre Censo 2022 e estimativa 2024
+130320,1303205,Novo Airão,2024,16467,IBGE - Estimativas de populacao
+130320,1303205,Novo Airão,2025,16562,IBGE - Estimativas de populacao
+130330,1303304,Novo Aripuanã,2021,26443,IBGE - Estimativas de populacao
+130330,1303304,Novo Aripuanã,2022,23818,IBGE - Censo Demografico 2022
+130330,1303304,Novo Aripuanã,2023,24402,Interpolacao linear entre Censo 2022 e estimativa 2024
+130330,1303304,Novo Aripuanã,2024,24987,IBGE - Estimativas de populacao
+130330,1303304,Novo Aripuanã,2025,25325,IBGE - Estimativas de populacao
+130340,1303403,Parintins,2021,116439,IBGE - Estimativas de populacao
+130340,1303403,Parintins,2022,96372,IBGE - Censo Demografico 2022
+130340,1303403,Parintins,2023,99164,Interpolacao linear entre Censo 2022 e estimativa 2024
+130340,1303403,Parintins,2024,101956,IBGE - Estimativas de populacao
+130340,1303403,Parintins,2025,101855,IBGE - Estimativas de populacao
+130350,1303502,Pauini,2021,19616,IBGE - Estimativas de populacao
+130350,1303502,Pauini,2022,19373,IBGE - Censo Demografico 2022
+130350,1303502,Pauini,2023,19802,Interpolacao linear entre Censo 2022 e estimativa 2024
+130350,1303502,Pauini,2024,20232,IBGE - Estimativas de populacao
+130350,1303502,Pauini,2025,20229,IBGE - Estimativas de populacao
+130353,1303536,Presidente Figueiredo,2021,38095,IBGE - Estimativas de populacao
+130353,1303536,Presidente Figueiredo,2022,30668,IBGE - Censo Demografico 2022
+130353,1303536,Presidente Figueiredo,2023,31836,Interpolacao linear entre Censo 2022 e estimativa 2024
+130353,1303536,Presidente Figueiredo,2024,33004,IBGE - Estimativas de populacao
+130353,1303536,Presidente Figueiredo,2025,33291,IBGE - Estimativas de populacao
+130356,1303569,Rio Preto da Eva,2021,34856,IBGE - Estimativas de populacao
+130356,1303569,Rio Preto da Eva,2022,24936,IBGE - Censo Demografico 2022
+130356,1303569,Rio Preto da Eva,2023,25330,Interpolacao linear entre Censo 2022 e estimativa 2024
+130356,1303569,Rio Preto da Eva,2024,25723,IBGE - Estimativas de populacao
+130356,1303569,Rio Preto da Eva,2025,25364,IBGE - Estimativas de populacao
+130360,1303601,Santa Isabel do Rio Negro,2021,26566,IBGE - Estimativas de populacao
+130360,1303601,Santa Isabel do Rio Negro,2022,14164,IBGE - Censo Demografico 2022
+130360,1303601,Santa Isabel do Rio Negro,2023,14170,Interpolacao linear entre Censo 2022 e estimativa 2024
+130360,1303601,Santa Isabel do Rio Negro,2024,14176,IBGE - Estimativas de populacao
+130360,1303601,Santa Isabel do Rio Negro,2025,13947,IBGE - Estimativas de populacao
+130370,1303700,Santo Antônio do Içá,2021,20889,IBGE - Estimativas de populacao
+130370,1303700,Santo Antônio do Içá,2022,28211,IBGE - Censo Demografico 2022
+130370,1303700,Santo Antônio do Içá,2023,29330,Interpolacao linear entre Censo 2022 e estimativa 2024
+130370,1303700,Santo Antônio do Içá,2024,30448,IBGE - Estimativas de populacao
+130370,1303700,Santo Antônio do Içá,2025,30679,IBGE - Estimativas de populacao
+130400,1304005,Silves,2021,9289,IBGE - Estimativas de populacao
+130400,1304005,Silves,2022,11559,IBGE - Censo Demografico 2022
+130400,1304005,Silves,2023,11982,Interpolacao linear entre Censo 2022 e estimativa 2024
+130400,1304005,Silves,2024,12404,IBGE - Estimativas de populacao
+130400,1304005,Silves,2025,12619,IBGE - Estimativas de populacao
+130380,1303809,São Gabriel da Cachoeira,2021,47031,IBGE - Estimativas de populacao
+130380,1303809,São Gabriel da Cachoeira,2022,51795,IBGE - Censo Demografico 2022
+130380,1303809,São Gabriel da Cachoeira,2023,54100,Interpolacao linear entre Censo 2022 e estimativa 2024
+130380,1303809,São Gabriel da Cachoeira,2024,56406,IBGE - Estimativas de populacao
+130380,1303809,São Gabriel da Cachoeira,2025,57396,IBGE - Estimativas de populacao
+130390,1303908,São Paulo de Olivença,2021,40837,IBGE - Estimativas de populacao
+130390,1303908,São Paulo de Olivença,2022,32967,IBGE - Censo Demografico 2022
+130390,1303908,São Paulo de Olivença,2023,34082,Interpolacao linear entre Censo 2022 e estimativa 2024
+130390,1303908,São Paulo de Olivença,2024,35196,IBGE - Estimativas de populacao
+130390,1303908,São Paulo de Olivença,2025,35442,IBGE - Estimativas de populacao
+130395,1303957,São Sebastião do Uatumã,2021,14678,IBGE - Estimativas de populacao
+130395,1303957,São Sebastião do Uatumã,2022,11670,IBGE - Censo Demografico 2022
+130395,1303957,São Sebastião do Uatumã,2023,11958,Interpolacao linear entre Censo 2022 e estimativa 2024
+130395,1303957,São Sebastião do Uatumã,2024,12247,IBGE - Estimativas de populacao
+130395,1303957,São Sebastião do Uatumã,2025,12338,IBGE - Estimativas de populacao
+130406,1304062,Tabatinga,2021,68502,IBGE - Estimativas de populacao
+130406,1304062,Tabatinga,2022,66764,IBGE - Censo Demografico 2022
+130406,1304062,Tabatinga,2023,69524,Interpolacao linear entre Censo 2022 e estimativa 2024
+130406,1304062,Tabatinga,2024,72283,IBGE - Estimativas de populacao
+130406,1304062,Tabatinga,2025,73348,IBGE - Estimativas de populacao
+130410,1304104,Tapauá,2021,16876,IBGE - Estimativas de populacao
+130410,1304104,Tapauá,2022,19599,IBGE - Censo Demografico 2022
+130410,1304104,Tapauá,2023,20050,Interpolacao linear entre Censo 2022 e estimativa 2024
+130410,1304104,Tapauá,2024,20501,IBGE - Estimativas de populacao
+130410,1304104,Tapauá,2025,20728,IBGE - Estimativas de populacao
+130420,1304203,Tefé,2021,59250,IBGE - Estimativas de populacao
+130420,1304203,Tefé,2022,73669,IBGE - Censo Demografico 2022
+130420,1304203,Tefé,2023,76474,Interpolacao linear entre Censo 2022 e estimativa 2024
+130420,1304203,Tefé,2024,79278,IBGE - Estimativas de populacao
+130420,1304203,Tefé,2025,80137,IBGE - Estimativas de populacao
+130423,1304237,Tonantins,2021,19038,IBGE - Estimativas de populacao
+130423,1304237,Tonantins,2022,19247,IBGE - Censo Demografico 2022
+130423,1304237,Tonantins,2023,19736,Interpolacao linear entre Censo 2022 e estimativa 2024
+130423,1304237,Tonantins,2024,20224,IBGE - Estimativas de populacao
+130423,1304237,Tonantins,2025,20257,IBGE - Estimativas de populacao
+130426,1304260,Uarini,2021,13839,IBGE - Estimativas de populacao
+130426,1304260,Uarini,2022,14431,IBGE - Censo Demografico 2022
+130426,1304260,Uarini,2023,14854,Interpolacao linear entre Censo 2022 e estimativa 2024
+130426,1304260,Uarini,2024,15278,IBGE - Estimativas de populacao
+130426,1304260,Uarini,2025,15640,IBGE - Estimativas de populacao
+130430,1304302,Urucará,2021,16007,IBGE - Estimativas de populacao
+130430,1304302,Urucará,2022,18631,IBGE - Censo Demografico 2022
+130430,1304302,Urucará,2023,19068,Interpolacao linear entre Censo 2022 e estimativa 2024
+130430,1304302,Urucará,2024,19505,IBGE - Estimativas de populacao
+130430,1304302,Urucará,2025,19617,IBGE - Estimativas de populacao
+130440,1304401,Urucurituba,2021,24098,IBGE - Estimativas de populacao
+130440,1304401,Urucurituba,2022,23945,IBGE - Censo Demografico 2022
+130440,1304401,Urucurituba,2023,24768,Interpolacao linear entre Censo 2022 e estimativa 2024
+130440,1304401,Urucurituba,2024,25592,IBGE - Estimativas de populacao
+130440,1304401,Urucurituba,2025,25965,IBGE - Estimativas de populacao
