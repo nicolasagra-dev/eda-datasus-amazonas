@@ -11,6 +11,15 @@ O projeto mostra um fluxo completo de análise de dados: coleta em fonte públic
 
 ![Ranking por volume x taxa populacional](data/processed/ranking_volume_vs_taxa.png)
 
+## Leitura rapida para recrutadores
+
+- Fonte real: DATASUS/TABNET e IBGE.
+- Escopo: morbidade hospitalar de residentes no Amazonas.
+- Periodo principal: 2021 a 2025.
+- Volume analisado: **1.137.197 internacoes** e **41.441 obitos hospitalares**.
+- Entrega: notebook, scripts de coleta, dados tratados, graficos, documentacao tecnica e dashboard Streamlit.
+- Competencias demonstradas: coleta, limpeza, integracao de dados, indicadores, visualizacao e comunicacao de limitacoes.
+
 ## Resumo executivo
 
 Entre 2021 e 2025, foram analisadas **1.137.197 internações hospitalares** e **41.441 óbitos hospitalares** de residentes no Amazonas registrados no SIH/SUS.
@@ -177,6 +186,8 @@ O dashboard em `app.py` permite filtrar anos, municípios e faixas etárias, al�
 - ranking municipal filtrado;
 - internações por faixa etária;
 - comparação entre volume absoluto e taxa anual média por 100 mil habitantes.
+
+Para portfolio, este e um dos melhores projetos para deploy no Streamlit Cloud. Depois de publicar, adicione o link no topo deste README e no campo "Website" do repositorio.
 
 ## Limitações
 
