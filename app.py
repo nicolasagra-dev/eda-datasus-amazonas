@@ -10,6 +10,12 @@ ROOT = Path(__file__).resolve().parent
 PROCESSED_DIR = ROOT / "data" / "processed"
 
 
+st.set_page_config(
+    page_title="EDA DataSUS Amazonas",
+    layout="wide",
+)
+
+
 @st.cache_data
 def load_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     municipios = pd.read_csv(PROCESSED_DIR / "municipios_tratados.csv")
@@ -28,13 +34,8 @@ def format_float(value: float) -> str:
 
 municipios, faixa, ranking = load_data()
 
-st.set_page_config(
-    page_title="EDA DataSUS Amazonas",
-    layout="wide",
-)
-
 st.title("EDA DataSUS: Morbidade Hospitalar no Amazonas")
-st.caption("SIH/SUS via TABNET, com população municipal do IBGE para taxas por 100 mil habitantes.")
+st.caption("SIH/SUS via TABNET, com população municipal do IBGE como denominador populacional.")
 
 anos = sorted(municipios["ano"].unique())
 municipios_lista = sorted(municipios["municipio"].unique())
@@ -80,7 +81,7 @@ col1, col2, col3, col4 = st.columns(4)
 col1.metric("Internações", format_int(total_internacoes))
 col2.metric("Óbitos", format_int(total_obitos))
 col3.metric("Taxa de mortalidade", f"{format_float(taxa_mortalidade)}%")
-col4.metric("Internações por 100 mil hab.", format_float(internacoes_100k))
+col4.metric("Internações por 100 mil hab./ano", format_float(internacoes_100k))
 
 st.divider()
 
@@ -116,7 +117,7 @@ with col_c:
         st.bar_chart(resumo_faixa, x="faixa_etaria", y="internacoes", horizontal=True)
 
 with col_d:
-    st.subheader("Volume absoluto x taxa por 100 mil")
+    st.subheader("Volume absoluto x taxa anual por 100 mil")
     ranking_preview = ranking[
         [
             "municipio",
